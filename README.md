@@ -14,23 +14,22 @@
 </p>
 
 # :computer: Features
-![image](https://github.com/Sachetty/GitHub/assets/70166153/59b2880b-217a-4655-8573-a033eb0bb210)
 
 <p align="center">
   Veja uma lista de repositórios públicos para um usuário específico do GitHub
-  <img src="![image](https://github.com/Sachetty/GitHub/assets/70166153/3ebda60c-8427-4a17-9eb3-206176fe2cd4)" title="Tela inicial">
-<img src="(![image](https://github.com/Sachetty/GitHub/assets/70166153/acd55862-fbeb-45f3-8b6c-752568bd5b48)" title="Tela inicial">
+  <img src="https://github.com/Sachetty/GitHub/assets/70166153/3ebda60c-8427-4a17-9eb3-206176fe2cd4" title="Tela inicial">
+<img src="https://github.com/Sachetty/GitHub/assets/70166153/acd55862-fbeb-45f3-8b6c-752568bd5b48" title="Tela inicial">
   Filtre repositórios por linguagem de programação para encontrar repositórios de interesse.
-  <img src="![image](https://github.com/Sachetty/GitHub/assets/70166153/2f5522d1-def8-4826-8175-ccc768cb8203)"  title="Tela inicial">
+  <img src="https://github.com/Sachetty/GitHub/assets/70166153/2f5522d1-def8-4826-8175-ccc768cb8203"  title="Tela inicial">
   Veja os repositórios favoritos do usuário.
-  <img src="![image](https://github.com/Sachetty/GitHub/assets/70166153/d2ce42a3-d1e7-4da1-8fab-fae248958a16)"  title="Tela inicial">
+  <img src="https://github.com/Sachetty/GitHub/assets/70166153/d2ce42a3-d1e7-4da1-8fab-fae248958a16"  title="Tela inicial">
   Tenha acesso aos pulls feitos aos repositórios publicos.
-  <img src="![image](https://github.com/Sachetty/GitHub/assets/70166153/6cfe6e84-9edd-43d8-800a-3ffaf7c43b4e)" title="Pulls">
+  <img src="https://github.com/Sachetty/GitHub/assets/70166153/6cfe6e84-9edd-43d8-800a-3ffaf7c43b4e" title="Pulls">
   Seja direccionado a página para obter informações do pull;
-  <img src="![image](https://github.com/Sachetty/GitHub/assets/70166153/e5f7a5f8-eb96-4521-93d2-ebbdc6869286)" title="Pulls GitHub">
+  <img src="https://github.com/Sachetty/GitHub/assets/70166153/e5f7a5f8-eb96-4521-93d2-ebbdc6869286" title="Pulls GitHub">
   Busque por outros usuários, para vizualizar seus repositórios públicos
-  <img src="![image](https://github.com/Sachetty/GitHub/assets/70166153/918a012c-2314-49ed-b6fc-eb10015f2e81)" title="SeachUsers">
-  <img src="![image](https://github.com/Sachetty/GitHub/assets/70166153/79fb7d3e-41fa-437a-a683-c60cd2945f6e)" title="OtherUsers">
+  <img src="https://github.com/Sachetty/GitHub/assets/70166153/918a012c-2314-49ed-b6fc-eb10015f2e81" title="SeachUsers">
+  <img src="https://github.com/Sachetty/GitHub/assets/70166153/79fb7d3e-41fa-437a-a683-c60cd2945f6e" title="OtherUsers">
 
 </p>
 
