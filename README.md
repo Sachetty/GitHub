@@ -37,7 +37,7 @@
 - [React](https://pt-br.reactjs.org/)
 - [Styled-Component](https://styled-components.com/)
 - [React-Icons](https://react-icons.github.io/react-icons/)
-- [React-RouterDom](https://reactrouter.com/en/main)
+- [React-Router-Dom](https://reactrouter.com/en/main)
 
 
 
