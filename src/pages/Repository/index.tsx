@@ -31,7 +31,6 @@ const Repository:React.FC = () =>{
     return <h1>Loading...</h1>;
   }
 
-  console.log(data)
     return(
         <Container>
             { !data?.issues.length ?

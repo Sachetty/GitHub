@@ -34,5 +34,6 @@ export const Title = styled.h1`
     }
     >h3 {
         font-size: 12px;
+        font-weight: 200;
     }
 `;

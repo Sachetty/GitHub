@@ -64,12 +64,28 @@ export const Tab = styled.div`
     margin-left: -10px
 `
 
+export const OptionsContent = styled.div`
+
+@media(min-width: 768px){
+     flex-direction: row;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+   
+`
+
+export const ButtonsContent = styled.div`
+    display:flex;
+    padding-top: 5%;
+`
+
 export const SearchForm = styled.form`
     display:flex;
     width: 100%;
     height: 40px;
     margin-top: 40px;
-    box-shadow: 0px 2px 4px #F4F4F4;
+    border-bottom: 1px solid #C4C4C4;
     align-items: center;
 
     @media(min-width: 768px){
@@ -81,6 +97,8 @@ export const SearchForm = styled.form`
     }
 
     > input: focus {
+        outline: none;
+        border: none; 
         outline: none;
     }
 `

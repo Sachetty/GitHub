@@ -46,10 +46,12 @@ export const BottomSide = styled.div`
           display: flex;
           align-items: center;
           margin-right: 60px;
+          min-width: 64px;
     
           > span {
             margin-left: 5px;
             font-size: 12px;
+            font-weight: 600;
             }
         }
     }

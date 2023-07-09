@@ -1,10 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { Container, Main, LeftContent, RightContent, ReposContainer, RepositoryIcon, StarLineIcon, Tab, SearchForm, SearchLineIcon } from "./styles";
+import { 
+  Container, 
+  Main, 
+  LeftContent, 
+  RightContent, 
+  ReposContainer, 
+  RepositoryIcon, 
+  StarLineIcon, 
+  Tab, 
+  SearchForm, 
+  SearchLineIcon, 
+  OptionsContent ,
+  ButtonsContent
+} from "./styles";
 import ProfileInfos from "../../components/ProfileInfos";
 import RepositoryCard from "../../components/RepositoryCard";
 import TabButton from "../../components/TabButton";
 import { APIUser, APIRepo, APIStarred } from "../../API";
 import { useNavigate, useParams } from "react-router-dom";
+import DropdownButton from "../../components/DropdownButton";
 
 interface Data {
     user?: APIUser;
@@ -107,6 +121,17 @@ const Profile:React.FC = () =>{
                             amount={data.starred!.length}
                             />
                     </Tab>
+                    <OptionsContent>
+                      <ButtonsContent>
+                          <DropdownButton
+                            text="Language"
+                            options={['', 'JavaScript', 'Python', 'Java', 'C++']}
+                          />
+                          <DropdownButton
+                            text="Language"
+                            options={['', 'JavaScript', 'Python', 'Java', 'C++']}
+                          />
+                        </ButtonsContent>
                     <SearchForm  onSubmit={handleSubmit}>
                       <SearchLineIcon/>
                       <input
@@ -115,6 +140,7 @@ const Profile:React.FC = () =>{
                           onChange={(e) => setSearch(e.currentTarget.value)}
                       />
                     </SearchForm>
+                    </OptionsContent>
                     <ReposContainer>
                         {starButton ?
                         <div>
@@ -137,7 +163,7 @@ const Profile:React.FC = () =>{
                                 username={item.owner.login}
                                 repositoryname={item.name}
                                 description={item.description}
-                                language={item.language}
+                                language={item.language || "-"}
                                 forks={item.forks}
                             />
                         ))}

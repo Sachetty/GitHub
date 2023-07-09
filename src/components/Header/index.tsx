@@ -10,9 +10,6 @@ const Header:React.FC = () =>{
                 <h2>/</h2>
                 <h3> Profile</h3>
             </Title>
-            {/* <SearchForm>
-                <input placeholder="Search Here"/>
-            </SearchForm> */}
         </Container>
     );
 };
