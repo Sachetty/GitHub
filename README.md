@@ -18,7 +18,7 @@
 <p align="center">
   Veja uma lista de repositórios públicos para um usuário específico do GitHub
   <img src="https://github.com/Sachetty/GitHub/assets/70166153/3ebda60c-8427-4a17-9eb3-206176fe2cd4" title="Tela inicial">
-<img src="https://github.com/Sachetty/GitHub/assets/70166153/acd55862-fbeb-45f3-8b6c-752568bd5b48" title="Tela inicial">
+<img src="https://github.com/Sachetty/GitHub/assets/70166153/acd55862-fbeb-45f3-8b6c-752568bd5b48" title="Tela inicial"> <br>
   Filtre repositórios por linguagem de programação para encontrar repositórios de interesse.
   <img src="https://github.com/Sachetty/GitHub/assets/70166153/2f5522d1-def8-4826-8175-ccc768cb8203"  title="Tela inicial">
   Veja os repositórios favoritos do usuário.
