@@ -32,10 +32,12 @@ const Profile:React.FC = () =>{
     const [repositoryButton, setRepositoryButton] = useState(false);
     const [starButton, setstarButton] = useState(true);
     const [search, setSearch] = useState('');
-    const navigate = useNavigate();
     const [data, setData] = useState<Data>();
+    const [backUp, setBackUp] = useState<Data>();
+
     const { username = 'Sachetty' } = useParams();
-    
+    const navigate = useNavigate();
+
     const handleButtonClick = () => {
         setstarButton(true);
         setRepositoryButton(false);
@@ -80,9 +82,30 @@ const Profile:React.FC = () =>{
         repos,
         starred,
       });
+      setBackUp({
+        user,
+        repos,
+        starred,});
     });
   }, [username]);
+  
 
+  const handleSelectOption = (option: string) => {
+
+    if (option !== 'All' && starButton == true) {
+      const filteredrespos = { ...backUp}.repos?.filter((item) => item.language === option);
+      setData({...backUp, repos:filteredrespos}); 
+    };
+
+    if (option !== 'All' && starButton == false) {
+      const filtered = { ...backUp}.starred?.filter((item) => item.language === option);
+      setData({...backUp, starred:filtered}); 
+    };
+
+    if (option === 'All')
+    setData({...backUp}); 
+  }
+ 
   if (data?.error) {
     return <h1>{data.error}</h1>;
   }
@@ -90,6 +113,7 @@ const Profile:React.FC = () =>{
   if (!data?.user || !data?.repos) {
     return <h1>Loading...</h1>;
   }
+
     return(
         <Container>
             <Main>
@@ -124,12 +148,14 @@ const Profile:React.FC = () =>{
                     <OptionsContent>
                       <ButtonsContent>
                           <DropdownButton
-                            text="Language"
-                            options={['', 'JavaScript', 'Python', 'Java', 'C++']}
+                            text="Type"
+                            options={['All']}
+                            onSelectOption={handleSelectOption}
                           />
                           <DropdownButton
                             text="Language"
-                            options={['', 'JavaScript', 'Python', 'Java', 'C++']}
+                            options={['All', 'JavaScript', 'Python', 'Java', 'C++']}
+                            onSelectOption={handleSelectOption}
                           />
                         </ButtonsContent>
                     <SearchForm  onSubmit={handleSubmit}>

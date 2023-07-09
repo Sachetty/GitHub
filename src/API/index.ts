@@ -20,6 +20,7 @@ export interface APIUser {
     html_url: string;
     language?: string;
     description?: string;
+    
   }
 
   export interface APIStarred {

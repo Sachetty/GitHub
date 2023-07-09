@@ -78,6 +78,11 @@ export const OptionsContent = styled.div`
 export const ButtonsContent = styled.div`
     display:flex;
     padding-top: 5%;
+    position: relative;
+
+    @media(min-width: 768px){
+        margin-left: 50px;
+    }
 `
 
 export const SearchForm = styled.form`

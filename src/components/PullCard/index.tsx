@@ -18,10 +18,12 @@ const PullCard:React.FC<Props> = ({
     }
 
     return(
-        <Container>
+        <Container onClick={handleClick}>
             <TopSide>
                 <header>
-                    <span onClick={handleClick}/>
+                    <a>
+                        {title}
+                    </a>
                 </header>
                 <p>{description}</p>
             </TopSide>
