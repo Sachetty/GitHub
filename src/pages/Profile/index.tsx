@@ -71,12 +71,6 @@ const Profile:React.FC = () =>{
       const repos = await reposResponse.json();
       const starred = await starredResponse.json();
 
-    //   const shuffledRepos = repos.sort(() => 0.5 - Math.random());
-    //   const slicedRepos = shuffledRepos.slice(0, 3);
-
-    //   const shuffledStarred = starred.sort(() => 0.5 - Math.random());
-    //   const sliceStarred = shuffledStarred.slice(0, 3); 
-
       setData({
         user,
         repos,
@@ -92,12 +86,12 @@ const Profile:React.FC = () =>{
 
   const handleSelectOption = (option: string) => {
 
-    if (option !== 'All' && starButton == true) {
+    if (option !== 'All' && starButton === true) {
       const filteredrespos = { ...backUp}.repos?.filter((item) => item.language === option);
       setData({...backUp, repos:filteredrespos}); 
     };
 
-    if (option !== 'All' && starButton == false) {
+    if (option !== 'All' && starButton === false) {
       const filtered = { ...backUp}.starred?.filter((item) => item.language === option);
       setData({...backUp, starred:filtered}); 
     };
@@ -154,7 +148,7 @@ const Profile:React.FC = () =>{
                           />
                           <DropdownButton
                             text="Language"
-                            options={['All', 'JavaScript', 'Python', 'Java', 'C++']}
+                            options={['All', 'Java', 'TypeScript', 'HTML', 'CSS']}
                             onSelectOption={handleSelectOption}
                           />
                         </ButtonsContent>
