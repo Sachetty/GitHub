@@ -14,6 +14,7 @@
 </p>
 
 # :computer: Features
+![image](https://github.com/Sachetty/GitHub/assets/70166153/59b2880b-217a-4655-8573-a033eb0bb210)
 
 <p align="center">
   Veja uma lista de repositórios públicos para um usuário específico do GitHub
